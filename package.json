@@ -16,9 +16,6 @@
     "Nathan Rajlich <nathan@tootallnate.net> (http://n8.io)"
   ],
   "license": "MIT",
-  "dependencies": {
-    "ms": "0.7.1"
-  },
   "devDependencies": {
     "browserify": "9.0.3",
     "mocha": "*"

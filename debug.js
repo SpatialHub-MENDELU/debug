@@ -11,7 +11,6 @@ exports.coerce = coerce;
 exports.disable = disable;
 exports.enable = enable;
 exports.enabled = enabled;
-exports.humanize = require('ms');
 
 /**
  * The currently active debug mode names, and names to skip.
@@ -33,12 +32,6 @@ exports.formatters = {};
  */
 
 var prevColor = 0;
-
-/**
- * Previous log timestamp.
- */
-
-var prevTime;
 
 /**
  * Select a color.
@@ -70,14 +63,6 @@ function debug(namespace) {
   function enabled() {
 
     var self = enabled;
-
-    // set `diff` timestamp
-    var curr = +new Date();
-    var ms = curr - (prevTime || curr);
-    self.diff = ms;
-    self.prev = prevTime;
-    self.curr = curr;
-    prevTime = curr;
 
     // add the `color` if not set
     if (null == self.useColors) self.useColors = exports.useColors();
