@@ -1,9 +1,9 @@
 {
-  "name": "debug",
+  "name": "@spatialhub/debug",
   "version": "2.2.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/visionmedia/debug.git"
+    "url": "git://github.com/SpatialHub-MENDELU/debug.git"
   },
   "description": "small debugging utility",
   "keywords": [
